@@ -69,7 +69,6 @@
   </div>
 </nav>
 
-<!-- Main section (hero): (CHANGE) Update the title and authors to your project's information -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -181,6 +180,9 @@
     </div>
   </div>
 </section>
+
+
+<!-- Main section (hero): (CHANGE) Update the title and authors to your project's information -->
 
 <!-- Teaser video section: (CHANGE) Update with your own teaser video link -->
 <!-- <section class="hero teaser">
@@ -326,19 +328,19 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-four-fifths table-outer">
         <h2 class="title is-3">Model Performance</h2>
             <!-- <img src="./static/images/web_wizard_tab2.png" style="margin-top:1em; width: 80%; height: auto;">
             <img src="./static/images/web_wizard_tab3.png" style="margin-top:1em; width: 80%; height: auto;">
             <img src="./static/images/web_wizard_tab4.png" style="margin-top:1em; width: 50%; height: auto;"> -->
             <table border="1" cellpadding="5" cellspacing="0">
               <thead>
-                <tr>
+                <tr class="tr-header">
                   <th rowspan="2"><strong>Model</strong></th>
                   <th colspan="4"><strong>GUI Understanding</strong></th>
                   <th colspan="5"><strong>GUI Grounding</strong></th>
                 </tr>
-                <tr>
+                <tr  class="tr-header">
                   <th>Visual WebBench</th>
                   <th>Web SRC</th>
                   <th>SQA Short</th>
@@ -350,7 +352,7 @@
                   <th>RefExp</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody  class="tr-body">
                 <tr>
                   <td>GPT-4V</td>
                   <td>64.6</td>
@@ -424,7 +426,7 @@
                   <td>-</td>
                 </tr>
                 <tr>
-                  <td colspan="10"><strong>Trained with LLaVA-1.5 data</strong></td>
+                  <td class="tr-header" colspan="10"><strong>Trained with LLaVA-1.5 data</strong></td>
                 </tr>
                 <tr>
                   <td>LLaVA-1.5-7B</td>
@@ -463,7 +465,7 @@
                   <td>1.2</td>
                 </tr>
                 <tr>
-                  <td colspan="10"><strong>Trained with LLaVA-1.5 data + data</strong></td>
+                  <td class="tr-header" colspan="10"><strong>Trained with LLaVA-1.5 data + data</strong></td>
                 </tr>
                 <tr>
                   <td><strong>Model-Vicuna</strong></td>
@@ -490,7 +492,7 @@
                   <td>+34.6</td>
                 </tr>
                 <tr>
-                  <td colspan="10"><strong>Trained with LLaVA-NeXT data</strong></td>
+                  <td class="tr-header" colspan="10"><strong>Trained with LLaVA-NeXT data</strong></td>
                 </tr>
                 <tr>
                   <td>LLaVA-1.6-7B</td>
@@ -565,7 +567,7 @@
                   <td>1.9</td>
                 </tr>
                 <tr>
-                  <td colspan="10"><strong>Trained with data + LLaVA-NeXT data</strong></td>
+                  <td class="tr-header" colspan="10"><strong>Trained with data + LLaVA-NeXT data</strong></td>
                 </tr>
                 <tr>
                   <td><u>Model-Llama3.1</u></td>
@@ -617,17 +619,19 @@
                 </tr>
               </tbody>
             </table>
+                                  
+          
             <br>
             <br>
             <br>
             <table border="1" cellpadding="5" cellspacing="0">
               <thead>
-                <tr>
+                <tr class="tr-header">
                   <th rowspan="2"><strong>Model</strong></th>
                   <th colspan="6"><strong>General OCR / DocQA / ChartQA</strong></th>
                   <th colspan="2"><strong>General Grounding</strong></th>
                 </tr>
-                <tr>
+                <tr class="tr-header">
                   <th>Doc VQA</th>
                   <th>Chart QA</th>
                   <th>Text VQA</th>
@@ -638,8 +642,8 @@
                   <th>RefCOCO+ (REG)</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
+              <tbody class="tr-body">
+                <tr >
                   <td>GPT-4V</td>
                   <td>88.4</td>
                   <td>78.5</td>
@@ -650,7 +654,7 @@
                   <td>-</td>
                   <td>-</td>
                 </tr>
-                <tr>
+                <tr >
                   <td>GPT-4o</td>
                   <td>92.8</td>
                   <td>85.7</td>
@@ -717,7 +721,7 @@
                   <td>-</td>
                 </tr>
                 <tr>
-                  <td colspan="9"><strong>Trained with LLaVA-1.5 data</strong></td>
+                  <td class="tr-header" colspan="9"><strong>Trained with LLaVA-1.5 data</strong></td>
                 </tr>
                 <tr>
                   <td>LLaVA-1.5-7B</td>
@@ -753,7 +757,7 @@
                   <td>35.2</td>
                 </tr>
                 <tr>
-                  <td colspan="9"><strong>Trained with data + LLaVA-1.5 data</strong></td>
+                  <td class="tr-header" colspan="9"><strong>Trained with data + LLaVA-1.5 data</strong></td>
                 </tr>
                 <tr>
                   <td><strong>Model-Vicuna</strong></td>
@@ -778,7 +782,7 @@
                   <td>+7.5</td>
                 </tr>
                 <tr>
-                  <td colspan="9"><strong>Trained with LLaVA-NeXT data</strong></td>
+                  <td class="tr-header" colspan="9"><strong>Trained with LLaVA-NeXT data</strong></td>
                 </tr>
                 <tr>
                   <td>LLaVA-NeXT-7B</td>
@@ -847,7 +851,7 @@
                   <td>30.8</td>
                 </tr>
                 <tr>
-                  <td colspan="9"><strong>Trained with data + LLaVA-NeXT data</strong></td>
+                  <td class="tr-header" colspan="9"><strong>Trained with data + LLaVA-NeXT data</strong></td>
                 </tr>
                 <tr>
                   <td><strong>Model-Llama3.1</strong></td>
@@ -898,20 +902,20 @@
             <br>
             <br>
             <br>
-            <div style="padding-left: 160px;">
-            <table border="1" cellpadding="5" cellspacing="0">
+            <div style="width: 100%;">
+            <table style="width: 100%;" border="1" cellpadding="5" cellspacing="0">
               <thead>
-                <tr>
+                <tr class="tr-header">
                   <th>Model</th>
                   <th colspan="6"><strong>Mind2Web</strong></th>
                 </tr>
-                <tr>
+                <tr class="tr-header">
                   <th></th>
                   <th colspan="2"><strong>Cross-Task</strong></th>
                   <th colspan="2"><strong>Cross-Website</strong></th>
                   <th colspan="2"><strong>Cross-Domain</strong></th>
                 </tr>
-                <tr>
+                <tr class="tr-header">
                   <th></th>
                   <th>Step</th>
                   <th>Ele.</th>
@@ -921,7 +925,7 @@
                   <th>Ele.</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="tr-body">
                 <tr>
                   <td>SeeClick</td>
                   <td>25.5</td>

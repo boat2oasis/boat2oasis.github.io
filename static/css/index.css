@@ -184,3 +184,27 @@ body {
 }
 
 
+.tr-header{
+  background: #F2F2F2;
+}
+
+.tr-header th{
+  vertical-align: middle;  
+  border: 1px  solid #DFDFDF;
+}
+.tr-body td{
+ border: 0;
+}
+.tr-body tr{
+  border-bottom: 1px  solid #DFDFDF;
+ }
+ table{
+  border-color: #DFDFDF;
+ }
+ table th,td{
+  padding: 10px;
+ }
+
+ .table-outer{
+  width: 100% !important;
+ }
