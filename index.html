@@ -281,8 +281,7 @@
             enhance this capability, we propose synthesizing general multimodal instructions
             from webpage UIs using text-based large language models (LLMs). Despite lacking direct visual input, text-based LLMs are able to process structured text representations from webpage accessibility trees. These instructions are then paired
             with UI screenshots to train multimodal models. We introduce <b>MultiUI</b>, a dataset
-            containing 7.3 million samples from 1 million websites, covering diverse multi-
-            modal tasks and UI layouts. Models trained on <b>MultiUI</b> not only excel in web UI
+            containing 7.3 million samples from 1 million websites, covering diverse multi-modal tasks and UI layouts. Models trained on <b>MultiUI</b> not only excel in web UI
             tasks—achieving up to a 48% improvement on VisualWebBench and a 30% boost
             in element accuracy on Mind2Web—but also generalize surprisingly well to non-
             web UI tasks and even to non-UI domains, such as document understanding, OCR,
@@ -402,8 +401,23 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths table-outer" style="line-height: 1;">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Model Performance</h2>
+
+        <div class="content has-text-justified" style="margin-top: 20px;">
+        <md-block class="content">
+          Overall, our dataset significantly improves model performances in GUI understanding and grounding benchmarks across all three model backbones we tested(i.e. LLaVA-Vicuna, LLaVA-Llama3.1, and LLaVA-Qwen2). Training on MultiUI also improves our model’s performance in Agent tasks. UIX-Qwen2-M2W surpasses both SeeClick and CogAgent in Mind2Web. Training on MultiUI also yields improvements in OCR-related scenarios, encompassing document, chart, and infographic understanding, as well as general grounding tasks.
+          </md-block>
+          </div>
+        </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+
+        <div class="column is-four-fifths table-outer">
+
+        <div class="the tables",  style="line-height: 1; font-size: small">
+
+
             <!-- <img src="./static/images/web_wizard_tab2.png" style="margin-top:1em; width: 80%; height: auto;">
             <img src="./static/images/web_wizard_tab3.png" style="margin-top:1em; width: 80%; height: auto;">
             <img src="./static/images/web_wizard_tab4.png" style="margin-top:1em; width: 50%; height: auto;"> -->
@@ -698,7 +712,8 @@
             <br>
             <br>
             <br>
-            <table border="1" cellpadding="5" cellspacing="0">
+            <div style="width: 100%;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;">
               <thead>
                 <tr class="tr-header">
                   <th rowspan="2"><strong>Model</strong></th>
@@ -973,6 +988,7 @@
                 </tr>
               </tbody>
             </table>
+          </div>
             <br>
             <br>
             <br>
@@ -1048,6 +1064,7 @@
               </tbody>
             </table>
           </div>
+        </div>
             
                         
             
@@ -1066,47 +1083,47 @@
     <div id="results-carousel" class="carousel results-carousel">
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/action_grounding.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/action_grounding.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/webpage_qa.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/webpage_qa.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/web_captioning.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/web_captioning.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/heading_ocr.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/heading_ocr.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/embed_image_qa.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/embed_image_qa.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/embed_caption.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/embed_caption.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/element_ocr.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/element_ocr.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/element_ground.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/element_ground.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
       <div class="box m-5">
         <div class="content has-text-centered">
-          <img src="static/images/action_prediction.png" alt="grade-lv" width="80%"/>
+          <img src="static/images/action_prediction.png" alt="grade-lv" width="70%"/>
         </div>
       </div>
     </div>
